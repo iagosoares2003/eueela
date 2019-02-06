@@ -9,7 +9,6 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { AlertaPage } from '../pages/alerta/alerta';
 import { SuasConfiguraOesPage } from '../pages/suas-configura-oes/suas-configura-oes';
-import { NossasFotosPage } from '../pages/nossas-fotos/nossas-fotos';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,8 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     SignupPage,
     AlertaPage,
-    SuasConfiguraOesPage,
-    NossasFotosPage
+    SuasConfiguraOesPage
   ],
   imports: [
     BrowserModule,
@@ -40,8 +38,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     SignupPage,
     AlertaPage,
-    SuasConfiguraOesPage,
-    NossasFotosPage
+    SuasConfiguraOesPage
   ],
   providers: [
     StatusBar,

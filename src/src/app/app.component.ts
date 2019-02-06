@@ -3,11 +3,10 @@ import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { PerfilPage } from '../pages/perfil/perfil';
 import { OnlinePage } from '../pages/online/online';
 import { AlertaPage } from '../pages/alerta/alerta';
-import { PerfilPage } from '../pages/perfil/perfil';
 import { SuasConfiguraOesPage } from '../pages/suas-configura-oes/suas-configura-oes';
-import { NossasFotosPage } from '../pages/nossas-fotos/nossas-fotos';
 
 
 import { ScapPage } from '../pages/scap/scap';
@@ -29,7 +28,10 @@ export class MyApp {
       splashScreen.hide();
     });
   }
-  goToOnline(params){
+  goToPerfil(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(PerfilPage);
+  }goToOnline(params){
     if (!params) params = {};
     this.navCtrl.setRoot(OnlinePage);
   }goToAlerta(params){
@@ -38,18 +40,8 @@ export class MyApp {
   }goToScap(params){
     if (!params) params = {};
     this.navCtrl.setRoot(ScapPage);
-  }goToPerfil(params){
-    if (!params) params = {};
-    this.navCtrl.setRoot(PerfilPage);
   }goToSuasConfiguraOes(params){
     if (!params) params = {};
     this.navCtrl.setRoot(SuasConfiguraOesPage);
-  }goToNossasFotos(params){
-    if (!params) params = {};
-    this.navCtrl.setRoot(NossasFotosPage);
-  }
-  goToMinhasFotos(params){
-    if (!params) params = {};
-    this.navCtrl.setRoot(NossasFotosPage);
   }
 }
